@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transport</title>
     <link rel="icon" href="assets/icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 
 <body>
-    <header id="home">
+    <header>
         <div class="logo">
             <a href="#home">
                 <img src="assets/logo_laranja.png" alt="Logo da transport em laranja">
             </a>
         </div>
 
-        <div class="menu_toggle">
+        <div class="menu_toggle" id="toggler">
             <span></span>
             <span></span>
             <span></span>
@@ -28,22 +28,39 @@
         <div class="menu_items">
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="">Serviços</a>
+                    <a href="#types">Serviços</a>
                 </li>
                 <li>
-                    <a href="">Garantias</a>
+                    <a href="#services">Garantias</a>
                 </li>
                 <li>
-                    <a href="">Contatos</a>
+                    <a href="#contact">Contatos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu_hamburguer" id="menu_hamburguer">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#types">Serviços</a>
+                </li>
+                <li>
+                    <a href="#services">Garantias</a>
+                </li>
+                <li>
+                    <a href="#contact">Contatos</a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <main>
+    <main id="home">
         <section class="initial">
             <div class="texts_home">
                 <h1>Mudanças, transportes e embalagens</h1>
@@ -56,7 +73,7 @@
             </div>
         </section>
 
-        <section class="types">
+        <section class="types" id="types">
 
             <div class="title_type">
                 <h2>Escolha como mudar</h2>
@@ -90,7 +107,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
 
             <div class="title_services">
                 <h2>Garantias</h2>
@@ -127,7 +144,7 @@
             </div>
         </section>
 
-        <form action="mailto:transport@email.com" method="post" enctype="text/plain" class="contact_form">
+        <form action="mailto:transport@email.com" method="post" enctype="text/plain" class="contact_form" id="contact">
             <h2>Entre em contato</h2>
             <input type="text" name="name" placeholder="Nome">
 
@@ -168,6 +185,7 @@
             </span> por Lucas Gomes
         </p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
