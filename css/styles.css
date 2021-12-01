@@ -90,6 +90,10 @@ header .menu_hamburguer ul li a {
   color: #ffffff;
 }
 
+header .menu_hamburguer ul li a:hover {
+  color: #000000;
+}
+
 header .menu_toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +216,7 @@ main .types .types_items {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0rem;
+  margin-top: 2rem;
 }
 
 main .types .types_items .type_item {
@@ -419,5 +423,42 @@ footer .captions {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.4rem;
+}
+
+@media screen and (min-width: 48rem) {
+  header .logo a img {
+    max-width: 14rem;
+    max-height: 14rem;
+  }
+  header .menu_hamburguer {
+    margin-top: 1rem;
+  }
+  main {
+    margin-top: 3rem;
+  }
+  main .initial .image_notebook img {
+    width: 24rem;
+    height: 24rem;
+  }
+  main .contact_form input,
+  main .contact_form textarea {
+    width: 100%;
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  header .menu_toggle {
+    display: none;
+  }
+  header .menu_hamburguer {
+    display: none;
+  }
+  header .menu_items {
+    display: initial;
+  }
+  header .menu_items ul {
+    gap: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
